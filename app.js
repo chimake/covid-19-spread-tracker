@@ -1343,7 +1343,12 @@ am4core.ready(function() {
 		return am4geodata_data_states_us[id] ? am4geodata_data_states_us[id] : id;
 	}
 
+	
 
 });
 
+$("#showlist").click(function () {
+    $("#areas_wrapper").toggle();
+    $("#list").toggleClass("listStyle");
+});
 
