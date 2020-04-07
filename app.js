@@ -111,10 +111,10 @@ am4core.ready(function() {
 	// if index is not set, get last slide
 	function getSlideData(index) {
 		if (index == undefined) {
-			index = covid_ng_timline.length - 1;
+			index = covid_ng_timeline.length - 1;
 		}
 
-		var data = covid_ng_timline[index];
+		var data = covid_ng_timeline[index];
 
 		// augment with names
 		for (var i = 0; i < data.list.length; i++) {
@@ -460,7 +460,7 @@ am4core.ready(function() {
 
 	// what to do when slider is dragged
 	slider.events.on("rangechanged", function(event) {
-		var index = Math.round((covid_ng_timline.length - 1) * slider.start);
+		var index = Math.round((covid_ng_timeline.length - 1) * slider.start);
 		updateMapData(getSlideData(index).list);
 		updateTotals(index);
 	})
@@ -1069,7 +1069,7 @@ am4core.ready(function() {
 	function setCountryData(countryIndex) {
 		// instead of setting whole data array, we modify current raw data so that a nice animation would happen
 		for (var i = 0; i < lineChart.data.length; i++) {
-			var di = covid_ng_timline[i].list;
+			var di = covid_ng_timeline[i].list;
 
 			var countryData = di[countryIndex];
 			var dataContext = lineChart.data[i];
