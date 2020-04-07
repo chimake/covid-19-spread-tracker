@@ -26,6 +26,9 @@ body {
 	overflow: auto;
 }
 
+#showlist{
+	display: none;
+}
 .listStyle {
 	padding: 0.5em;
 	flex: 0 0 500px;
