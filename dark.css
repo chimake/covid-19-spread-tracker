@@ -70,7 +70,7 @@ table.dataTable.display tbody tr:hover>.sorting_1, table.dataTable.order-column.
 }
 
 @media screen and (max-width: 1000px) {
-	/*#list {*/
-		/*display: none;*/
-	/*}*/
+	#list {
+		display: none;
+	}
 }
