@@ -1347,9 +1347,5 @@ am4core.ready(function() {
 
 });
 
-$("#showlist").click(function () {
-	alert("working");
-    $("#areas_wrapper").toggle();
-    $("#list").toggleClass("listStyle");
-});
+
 
